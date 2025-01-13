@@ -6,6 +6,11 @@
 
 }
 
+body
+{
+  margin: 0;
+}
+
 #site_header
 {
   background-color: var(--cv-light);
