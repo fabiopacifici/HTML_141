@@ -1,0 +1,43 @@
+:root
+{
+  --cv-dark: black;
+  --cv-accent: #cf8b05;
+  --cv-light: #ededed;
+
+}
+
+#site_header
+{
+  background-color: var(--cv-light);
+  text-align: center;
+  border-bottom: 4px solid var(--cv-accent);
+}
+
+#profile_image
+{
+  width: 140px;
+}
+
+.title
+{
+  color: var(--cv-accent);
+  text-transform: capitalize;
+}
+
+.item_title
+{
+  font-style: italic;
+  font-size: 22px;
+}
+
+#site_footer
+{
+  border-top: 4px solid var(--cv-accent);
+  text-align: center;
+}
+
+.container
+{
+  width: 80%;
+  margin: auto;
+}
