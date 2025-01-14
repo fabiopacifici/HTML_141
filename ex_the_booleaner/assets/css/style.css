@@ -1,12 +1,37 @@
-body
+/* Common */
+:root
+{
+  --bool-dark: #000000;
+  --bool-light: #8d8d8d;
+  --bool-lighter: white;
+  --bool-highlite: #ffff00;
+  --bool-primary: #4da1ff;
+  --bool-primary-light: #38b4e9;
+  --bool-primary-lighter: #b2e6f2;
+
+}
+
+*
 {
   margin: 0;
 }
 
-header
+.w-50
+{
+  width: 50%;
+}
+
+.bg-primary-lighter
+{
+  background-color: var(--bool-primary-lighter);
+}
+
+
+/* Header */
+#site_header
 {
   height: 100px;
-  background-color: paleturquoise;
+  background-color: var(--bool-primary);
   background-image: url('../img/pattern.png');
   background-size: 400px;
 
@@ -15,4 +40,73 @@ header
 .logo
 {
   margin-top: 40px;
+}
+
+
+/* Main */
+
+#site_main
+{
+  padding: 0.25rem;
+}
+
+.article_title
+{
+  font-size: 40px;
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.metadata
+{
+  color: var(--bool-light);
+  margin-bottom: 2rem;
+}
+
+.author
+{
+  color: var(--bool-primary);
+}
+
+.date
+{
+  font-size: 14px;
+}
+
+figure
+{
+  margin-bottom: 1.5rem;
+}
+
+figcaption
+{
+  font-size: 14px;
+}
+
+.highlite
+{
+  background-color: var(--bool-highlite);
+}
+
+ul
+{
+  padding-left: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+
+
+table
+{
+  border-spacing: 0;
+  margin-bottom: 1.5rem;
+}
+
+
+thead
+{
+  background-color: var(--bool-primary);
+  color: var(--bool-lighter);
+  text-align: left;
 }
