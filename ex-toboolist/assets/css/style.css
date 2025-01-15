@@ -1,0 +1,67 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+:root
+{
+  --tb-page-bg: #f6f8f9;
+  --tb-darker: #000000;
+  --tb-lighter: white;
+  --tb-light: #d0d6d9;
+  --tb-primary: #47adf1;
+  --tb-goals-bg: #9c72e4;
+  --tb-recruiting-bg: #64c0a9;
+  --tb-mobile-bg: #f29e33;
+  --tb-website-bg: #d863a0;
+  --tb-sales-bg: #b0c926;
+  --tb-checkmark-bg: #70c6b2;
+  --tb-cancel-bg: #ee675f;
+
+}
+
+body
+{
+  background-color: var(--tb-page-bg);
+  font-family: Arial, Helvetica, sans-serif
+}
+
+/* Debug */
+.debug *
+{
+  border: 1px dashed;
+}
+
+
+
+/* Header */
+#site_header
+{
+
+  background-color: var(--tb-lighter);
+  padding: .5rem;
+}
+
+#logo_image
+{
+  height: 100%;
+  vertical-align: middle;
+}
+
+#logo_text
+{
+  font-size: 2.5rem;
+  vertical-align: middle;
+  font-weight: 600;
+}
+
+
+/* Main */
+
+
+
+/* Footer */
