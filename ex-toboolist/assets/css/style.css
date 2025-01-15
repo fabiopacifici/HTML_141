@@ -19,8 +19,8 @@
   --tb-mobile-bg: #f29e33;
   --tb-website-bg: #d863a0;
   --tb-sales-bg: #b0c926;
-  --tb-checkmark-bg: #70c6b2;
-  --tb-cancel-bg: #ee675f;
+  --tb-checkmark-color: #70c6b2;
+  --tb-cancel-color: #ee675f;
 
 }
 
@@ -29,6 +29,28 @@ body
   background-color: var(--tb-page-bg);
   font-family: Arial, Helvetica, sans-serif
 }
+
+ul
+{
+  list-style: none;
+
+  li
+  {
+    margin-bottom: 1rem;
+  }
+}
+
+details
+{
+  margin-bottom: 2rem;
+
+  summary
+  {
+    margin-bottom: 1rem;
+  }
+
+}
+
 
 /* Utilities */
 .container
@@ -43,6 +65,7 @@ body
   background-color: var(--tb-lighter);
   border-radius: 0.75rem;
   margin: 1rem 0;
+  box-shadow: 0 0 10px var(--tb-light);
 }
 
 .top,
@@ -62,8 +85,8 @@ body
 .bottom
 {
   padding-top: 2rem;
+  padding-bottom: 2rem;
 }
-
 
 /* Buttons */
 .btn
@@ -71,20 +94,103 @@ body
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
   border: none;
+
+  &:hover
+  {
+    cursor: pointer;
+  }
+
 }
 
 .btn-primary
 {
   background-color: var(--tb-primary);
   color: var(--tb-lighter);
-  border: 1px solid var(--tb-primary)
+  border: 1px solid var(--tb-primary);
+
+  &:hover
+  {
+
+    background-color: darkslateblue;
+    border: 1px solid darkslateblue;
+  }
 }
 
 .btn-outline-light
 {
   background-color: transparent;
   color: var(--tb-light);
-  border: 2px solid var(--tb-light)
+  border: 2px solid var(--tb-light);
+
+  &:hover
+  {
+    color: var(--tb-lighter);
+    background-color: var(--tb-light);
+  }
+
+}
+
+/* Tags */
+.tag
+{
+  display: inline-block;
+  font-size: 10px;
+  border-radius: 0.5rem;
+  color: var(--tb-lighter);
+  padding: 0.25rem 0.5rem;
+  text-transform: capitalize;
+
+}
+
+.tag-editorial
+{
+  background-color: var(--tb-primary);
+}
+
+.tag-goals
+{
+  background-color: var(--tb-goals-bg);
+}
+
+.tag-recruiting
+{
+  background-color: var(--tb-recruiting-bg);
+}
+
+.tag-mobile
+{
+  background-color: var(--tb-mobile-bg);
+}
+
+.tag-website
+{
+  background-color: var(--tb-website-bg);
+}
+
+.tag-sales
+{
+  background-color: var(--tb-sales-bg);
+}
+
+.circle
+{
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid;
+  text-align: center;
+  line-height: 20px;
+}
+
+.circle-check
+{
+  color: var(--tb-checkmark-color);
+}
+
+.circle-cancel
+{
+  color: var(--tb-cancel-color);
 }
 
 /* Debug */
@@ -115,8 +221,17 @@ body
 }
 
 
-/* Main */
+ul li:first-child
+{
+  text-transform: uppercase;
+
+}
 
 
+ul li:last-child
+{
+  text-transform: capitalize;
+
+}
 
 /* Footer */

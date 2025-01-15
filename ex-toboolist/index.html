@@ -25,15 +25,86 @@
       <div class="card">
 
         <div class="top">
-            <button class="btn btn-primary">Add Task</button>
-            <button class="btn btn-outline-light">Add Section</button>
+          <button class="btn btn-primary">Add Task</button>
+          <button class="btn btn-outline-light">Add Section</button>
 
         </div>
         <!-- /.top -->
         <div class="bottom">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, incidunt fugiat? Repellat
-          blanditiis laboriosam non distinctio ex magnam aperiam fuga inventore dolor maxime adipisci voluptatibus
-          molestiae, deserunt nostrum atque illo!
+
+          <details id="new_tasks" open>
+            <summary>
+              <strong>New Task</strong>
+            </summary>
+            <ul>
+              <li>
+                <span class="circle circle-check">&checkmark;</span>
+                Quarterly Newsletter
+                <span class="tag tag-editorial">Editorial</span>
+              </li>
+            </ul>
+
+          </details>
+          <!-- /#new_tasks -->
+          <details id="today" open>
+            <summary>
+              <strong>Today</strong>
+            </summary>
+            <ul>
+              <li>
+                <span class="circle circle-check">&checkmark;</span>
+                Recruiting blog post
+                <span class="tag tag-editorial">Editorial</span>
+              </li>
+              <li>
+                <span class="circle circle-check">&checkmark;</span>
+                Mobile app launch
+                <span class="tag tag-goals">Q1 Goals</span>
+              </li>
+              <li>
+                <span class="circle circle-cancel">&times;</span>
+                Interview John H.
+                <span class="tag tag-recruiting">Recruiting</span>
+              </li>
+              <li>
+                <span class="circle circle-check">&checkmark;</span>
+                Summit update to mobile store fronts
+                <span class="tag tag-mobile">mobile</span>
+              </li>
+            </ul>
+
+          </details>
+          <!-- /#today -->
+
+          <details id="upcoming" class="bg-primary" open>
+            <summary>
+              <strong>Upcoming</strong>
+            </summary>
+            <ul>
+              <li>
+                <span class="circle circle-cancel">&times;</span>
+                Schedule meeting with Alex
+              </li>
+              <li>
+                <span class="circle circle-check">&checkmark;</span>
+                Homepage refresh
+                <span class="tag tag-website">website</span>
+              </li>
+              <li>
+                <span class="circle circle-check">&checkmark;</span>
+                Onboard new Sales team members
+                <span class="tag tag-sales">sales</span>
+              </li>
+              <li>
+                <span class="circle circle-check">&checkmark;</span>
+                Review editorial calendar
+                <span class="tag tag-editorial">Editorial</span>
+              </li>
+            </ul>
+
+          </details>
+          <!-- /#upcoming -->
+
         </div>
         <!-- /.bottom -->
       </div>
