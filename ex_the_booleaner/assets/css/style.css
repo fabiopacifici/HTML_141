@@ -110,3 +110,30 @@ thead
   color: var(--bool-lighter);
   text-align: left;
 }
+
+
+#related
+{
+  margin-top: 2rem;
+}
+
+.related_article
+{
+  background-color: var(--bool-dark);
+  color: var(--bool-lighter);
+  width: 250px;
+  height: 208px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+}
+
+#monitor
+{
+  background-image: url("../img/monitor.jpg");
+}
+
+#graph
+{
+  background-image: url('../img/graph.jpg');
+}
