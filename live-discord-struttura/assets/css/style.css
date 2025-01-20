@@ -1,0 +1,43 @@
+/* Common */
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container
+{
+  width: 80%;
+  margin: auto;
+}
+
+.d-flex
+{
+  display: flex;
+}
+
+/* Header */
+header
+{
+  background-color: deepskyblue;
+  padding: 1rem 0;
+
+  .logo,
+  .actions
+  {
+    flex-grow: 1;
+  }
+
+  .actions
+  {
+    text-align: end;
+  }
+
+  .menu
+  {
+    flex-grow: 2;
+    text-align: center;
+  }
+
+}
