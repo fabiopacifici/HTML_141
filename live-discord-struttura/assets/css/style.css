@@ -11,6 +11,12 @@
   --dis-primary-color: deepskyblue;
 }
 
+
+section
+{
+  padding: 1rem;
+}
+
 .container
 {
   width: 80%;
@@ -21,6 +27,18 @@
 {
   display: flex;
 }
+
+.w-40
+{
+  width: 40%;
+}
+
+.w-60
+{
+  width: 60%;
+}
+
+
 
 /* Header */
 header
@@ -52,6 +70,17 @@ header
 
 .debug
 {
+
+  *
+  {
+    border: 1px dashed;
+  }
+
+  .container
+  {
+    background-color: orange;
+  }
+
   .jumbotron
   {
     height: 400px;
@@ -62,6 +91,17 @@ header
       background-color: orange;
     }
   }
+
+
+  .w-40,
+  .w-60
+  {
+    height: 300px;
+    background-color: blue;
+  }
+
+
+
 }
 
 .jumbotron
@@ -74,5 +114,14 @@ header
     width: 70%;
     margin: auto;
 
+  }
+}
+
+
+.technology
+{
+  .container
+  {
+    min-height: 450px;
   }
 }
