@@ -166,6 +166,27 @@ p
 
 }
 
+.bg-light
+{
+  background-color: var(--dis-primary-light);
+}
+
+.wave
+{
+  color: var(--dis-primary-light);
+}
+
+.wave-top
+{
+  margin-bottom: -0.5rem;
+}
+
+.wave-bottom
+{
+  margin-top: -0.5rem;
+  rotate: 180deg;
+}
+
 /* #endregion Utilities */
 
 /* #region Header */
