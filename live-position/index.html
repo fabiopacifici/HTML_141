@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- FontAwesome 6.2.0 CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+    img {
+      max-width: 100%;
+    }
+
+    .card {
+      position: relative;
+      width: 400px;
+      height: 450px;
+      background-color: rgb(215, 178, 251);
+      border-radius: 1rem;
+      box-shadow: 0 0 10px lightgray;
+    }
+
+    .card:hover div.star {
+      display: block;
+    }
+
+
+
+    div.star {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      border: 1px dashed;
+      transform: translate(-50%, -50%);
+      display: none;
+      color: white;
+
+      i {
+
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+
+  <div class="card">
+    <img src="./item1.svg" alt="">
+
+    <div class="star">
+      <i class="fa fa-star" aria-hidden="true"></i>
+    </div>
+
+
+  </div>
+
+
+
+</body>
+
+</html>
