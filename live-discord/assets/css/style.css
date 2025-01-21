@@ -166,6 +166,19 @@ p
 
 }
 
+.btn-primary
+{
+  background-color: var(--dis-primary-soft);
+  color: var(--dis-primary-lighter);
+
+  &:hover
+  {
+    background-color: var(--dis-primary-color);
+  }
+
+}
+
+
 .bg-light
 {
   background-color: var(--dis-primary-light);
@@ -290,10 +303,15 @@ header
 
 .technology
 {
+  text-align: center;
+
   .container
   {
-    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
   }
+
 }
 
 /* #endregion Main */
