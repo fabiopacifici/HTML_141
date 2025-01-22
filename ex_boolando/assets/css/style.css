@@ -291,3 +291,18 @@ header
 
 
 /* #endregion Main  */
+
+
+
+footer
+{
+  color: var(--bool-light);
+  background-color: var(--bool-dark);
+  padding: 2rem 0;
+
+  .container
+  {
+    display: flex;
+    justify-content: space-between;
+  }
+}
