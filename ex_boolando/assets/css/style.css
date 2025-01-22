@@ -15,6 +15,11 @@
   --bool-success: #018000;
 }
 
+img
+{
+  max-width: 100%;
+}
+
 .debug
 {
 
@@ -162,13 +167,18 @@ header
     {
       list-style: none;
       display: flex;
-
+      gap: 0.5rem;
 
       a
       {
         color: var(--bool-light);
         text-decoration: none;
-        padding: 0.5rem;
+
+
+        &:hover
+        {
+          color: #1a1a1a;
+        }
       }
 
     }
@@ -180,3 +190,104 @@ header
 
 
 /* #endregion header  */
+
+
+/* #region Main  */
+.debug .card
+{
+  min-height: 300px;
+  background-color: gray;
+}
+
+.card
+{
+
+
+  .card-top
+  {
+    position: relative;
+
+    .favourites
+    {
+      position: absolute;
+      top: -0.25rem;
+      right: 0.5rem;
+      background-color: var(--bool-light);
+      padding: 1rem 0.5rem;
+      border-bottom-right-radius: 0.5rem;
+      box-shadow: 1px 4px 5px gray;
+    }
+
+    .tags
+    {
+      position: absolute;
+      left: 0;
+      bottom: 2rem;
+      color: var(--bool-light);
+
+
+      .discounted,
+      .category
+      {
+        display: inline-block;
+        padding: 0.25rem 0.5rem;
+      }
+
+      .discounted
+      {
+        background-color: var(--bool-danger);
+      }
+
+      .category
+      {
+        background-color: var(--bool-success);
+      }
+
+    }
+  }
+
+
+
+  &:hover figure img:last-child
+  {
+    display: block;
+  }
+
+  &:hover figure img:first-child
+  {
+    display: none;
+  }
+
+
+  figure
+  {
+    img
+    {
+      display: block;
+    }
+
+    img:last-child
+    {
+      display: none;
+    }
+  }
+
+
+  .card-bottom
+  {
+    .discounted
+    {
+      color: var(--bool-danger);
+      font-weight: 600;
+    }
+
+    .full
+    {
+      text-decoration: line-through;
+    }
+  }
+
+}
+
+
+/* #endregion Main  */
