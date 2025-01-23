@@ -1,0 +1,203 @@
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* body
+{
+  background-color: #ededed;
+  font-family: 'Poppins', sans-serif
+} */
+
+:root
+{
+  --box-dark: #000000;
+  --box-primary: #0061fe;
+  --box-secondary: #b4d0e6;
+
+}
+
+body
+{
+  font-family: sans-serif;
+  min-width: 1440px;
+}
+
+/* Layout */
+.container
+{
+  max-width: 1152px;
+  width: 80%;
+  margin: auto;
+}
+
+.container-sm
+{
+  max-width: 992px;
+  width: 70%;
+  margin: auto;
+}
+
+.row
+{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -1rem
+}
+
+[class^="col"]
+{
+  padding: 1rem
+}
+
+.col
+{
+  width: auto;
+  flex-basis: auto;
+
+}
+
+
+.col-4
+{
+  width: calc(100% / 12 * 4);
+
+}
+
+.col-8
+{
+  width: calc(100% / 12 * 8);
+
+}
+
+.col-12
+{
+  width: 100%;
+
+}
+
+/* end Layout */
+
+.btn
+{
+  display: inline-block;
+  text-decoration: none;
+  padding: 0.25rem 0.75rem;
+}
+
+.btn-lg
+{
+  padding: 1rem 2rem;
+}
+
+.btn-primary
+{
+  background-color: var(--box-primary);
+  color: white;
+}
+
+/* Header */
+
+header
+{
+
+  background-color: white;
+  padding: 0 1rem;
+  box-shadow: 1px 3px 10px gray;
+
+  nav
+  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .left_menu,
+  .right_menu,
+  ul
+  {
+    display: flex;
+    flex-wrap: wrap;
+
+    &
+    {
+      list-style: none;
+      align-items: center;
+      gap: 1rem;
+
+    }
+
+    ul a
+    {
+      padding: 1rem 0;
+      display: inline-block;
+      border-bottom: 1px solid transparent;
+      text-decoration: none;
+
+      &:hover
+      {
+        border-bottom: 1px solid;
+      }
+    }
+  }
+
+}
+
+/* end Header */
+
+
+/* Main */
+.jumbotron
+{
+  background-color: var(--box-secondary);
+  height: 700px;
+  margin-bottom: 6rem;
+
+  a:not(.btn)
+  {
+    color: #000000;
+  }
+
+  h1
+  {
+    font-size: 4.5rem;
+    font-weight: 900;
+    padding-top: 3rem;
+  }
+
+  p
+  {
+    line-height: 1.75rem;
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+  }
+
+  .btn
+  {
+    margin-bottom: 2rem;
+  }
+
+  /* 
+  TODO: Fix image that goes outside its column 
+  swap to negative margin?
+  */
+  img
+  {
+    width: 120%;
+  }
+}
+
+
+#plans
+{
+  h2
+  {
+    font-size: 2.75rem;
+    padding: 3rem 0 2rem;
+  }
+}
+
+/* endMain */
