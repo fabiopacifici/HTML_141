@@ -14,7 +14,8 @@
     crossorigin='anonymous' referrerpolicy='no-referrer' />
 
   <!-- Font -->
-  <link href='https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;900&display=swap' rel='stylesheet'>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;0,800;1,400&display=swap"
+    rel="stylesheet" />
   <!--  -->
   <link rel="stylesheet" href="./assets/css/style.css">
 </head>
@@ -46,6 +47,7 @@
       <!-- /.right_menu -->
     </nav>
   </header>
+
   <main>
 
     <div class="jumbotron">
@@ -79,44 +81,447 @@
     </div>
     <!-- /.jumbotron -->
 
+    <!-- 
+    Grid layout with flexbox
+    .container > .row > .col-x  
+    
+    -->
     <section id="plans">
       <div class="container-sm">
         <h2>Trova il piano business che fa per te</h2>
-
+        <div class="plan_picker">
+          <style>
+            .plan_picker {
+              display: flex;
+              gap: 1rem;
+            }
+          </style>
+          <label for="plan_picker_month">
+            <input type="radio" name="plan_picker" id="plan_picker_month" checked>
+            Fatturazione Mensile
+          </label>
+          <label for="plan_picker_year">
+            <input type="radio" name="plan_picker" id="plan_picker_year">
+            Fatturazione Annuale
+          </label>
+        </div>
         <div class="row">
           <div class="col-4">
             <div class="card">
+              <div class="card-header">
+                <i class="fas fa-user"></i>
+                <span>Singolo</span>
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body">
+                <h3>Professional</h3>
 
+                <div class="price">
+                  <strong>€ 12.00</strong>
+                  <div>/mese</div>
+                </div>
+
+                <div class="features">
+                  <ul class="fa-ul">
+                    <li>
+                      <span class="fa-li">
+                        <i class="fas fa-user"></i>
+                      </span>1 utente
+                    </li>
+                    <li>
+                      <span class="fa-li">
+                        <i class="fas fa-folder"></i>
+                      </span>5 TB di spazio di archiviazione sicuro
+                    </li>
+                    <li>
+                      <span class="fa-li">
+                        <i class="fas fa-share"></i>
+                      </span>Funzioni di produttivitá premium e condivisione file semplice e sicura
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="call_to_action">
+                  <a href="" class="btn btn-lg btn-primary">Prova gratis per 30 giorni</a>
+                  oppure <a href="">acquista ora</a>
+                </div>
+
+                <hr class="divider">
+
+
+                <div class="key_points">
+                  <h4>Punti salienti del piano</h4>
+                  <ul class="fa-ul">
+                    <li>
+                      <span class="fa-li">
+                        <i class="fas fa-check"></i>
+                      </span> Invia file fino a 100GB con Dropbox Transfert
+                    </li>
+                    <li>
+                      <span class="fa-li">
+                        <i class="fas fa-check"></i>
+                      </span> Invia file fino a 100GB con Dropbox Transfert
+                    </li>
+
+                  </ul>
+                </div>
+
+
+              </div>
+              <!-- /.card-body -->
             </div>
           </div>
           <div class="col-4">
             <div class="card">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Et tempore itaque aliquam sequi quibusdam
-              reiciendis nobis perferendis ea sapiente ipsum totam provident natus ut, est suscipit dolores
-              reprehenderit quisquam sint!
+              <div class="card-header">
+                <i class="fas fa-user"></i>
+                <span>Singolo</span>
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body">
+                <h3>Professional</h3>
+
+                <div class="price">
+                  <strong>€ 12.00</strong>
+                  <div>/mese</div>
+                </div>
+
+                <div class="features">
+                  <ul class="fa-ul">
+                    <li>
+                      <span class="fa-li">
+                        <i class="fas fa-user"></i>
+                      </span>1 utente
+                    </li>
+                    <li>
+                      <span class="fa-li">
+                        <i class="fas fa-folder"></i>
+                      </span>5 TB di spazio di archiviazione sicuro
+                    </li>
+                    <li>
+                      <span class="fa-li">
+                        <i class="fas fa-share"></i>
+                      </span>Funzioni di produttivitá premium e condivisione file semplice e sicura
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="call_to_action">
+                  <a href="" class="btn btn-lg btn-primary">Prova gratis per 30 giorni</a>
+                  oppure <a href="">acquista ora</a>
+                </div>
+
+                <hr class="divider">
+
+
+                <div class="key_points">
+                  <h4>Punti salienti del piano</h4>
+                  <ul class="fa-ul">
+                    <li>
+                      <span class="fa-li">
+                        <i class="fas fa-check"></i>
+                      </span> Invia file fino a 100GB con Dropbox Transfert
+                    </li>
+                    <li>
+                      <span class="fa-li">
+                        <i class="fas fa-check"></i>
+                      </span> Invia file fino a 100GB con Dropbox Transfert
+                    </li>
+                    <li>
+                      <span class="fa-li">
+                        <i class="fas fa-check"></i>
+                      </span> Invia file fino a 100GB con Dropbox Transfert
+                    </li>
+                    <li>
+                      <span class="fa-li">
+                        <i class="fas fa-check"></i>
+                      </span> Invia file fino a 100GB con Dropbox Transfert
+                    </li>
+                    <li>
+                      <span class="fa-li">
+                        <i class="fas fa-check"></i>
+                      </span> Invia file fino a 100GB con Dropbox Transfert
+                    </li>
+
+                  </ul>
+                </div>
+
+
+              </div>
+              <!-- /.card-body -->
             </div>
           </div>
           <div class="col-4">
             <div class="card">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Et tempore itaque aliquam sequi quibusdam
-              reiciendis nobis perferendis ea sapiente ipsum totam provident natus ut, est suscipit dolores
-              reprehenderit quisquam sint!
+              <div class="card-header">
+                <i class="fas fa-user"></i>
+                <span>Singolo</span>
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body">
+                <h3>Professional</h3>
+
+                <div class="price">
+                  <strong>€ 12.00</strong>
+                  <div>/mese</div>
+                </div>
+
+                <div class="features">
+                  <ul class="fa-ul">
+                    <li>
+                      <span class="fa-li">
+                        <i class="fas fa-user"></i>
+                      </span>1 utente
+                    </li>
+                    <li>
+                      <span class="fa-li">
+                        <i class="fas fa-folder"></i>
+                      </span>5 TB di spazio di archiviazione sicuro
+                    </li>
+                    <li>
+                      <span class="fa-li">
+                        <i class="fas fa-share"></i>
+                      </span>Funzioni di produttivitá premium e condivisione file semplice e sicura
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="call_to_action">
+                  <a href="" class="btn btn-lg btn-primary">Prova gratis per 30 giorni</a>
+                  oppure <a href="">acquista ora</a>
+                </div>
+
+                <hr class="divider">
+
+
+                <div class="key_points">
+                  <h4>Punti salienti del piano</h4>
+                  <ul class="fa-ul">
+                    <li>
+                      <span class="fa-li">
+                        <i class="fas fa-check"></i>
+                      </span> Invia file fino a 100GB con Dropbox Transfert
+                    </li>
+                    <li>
+                      <span class="fa-li">
+                        <i class="fas fa-check"></i>
+                      </span> Invia file fino a 100GB con Dropbox Transfert
+                    </li>
+
+                  </ul>
+                </div>
+
+
+              </div>
+              <!-- /.card-body -->
             </div>
           </div>
           <div class="col-12">
             <div class="card">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Et tempore itaque aliquam sequi quibusdam
-              reiciendis nobis perferendis ea sapiente ipsum totam provident natus ut, est suscipit dolores
-              reprehenderit quisquam sint!
+              <div class="card-header">
+                <i class="fas fa-user"></i>
+                <span>Team</span>
+              </div>
+              <!-- /.card-header -->
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-8">
+                    <h3>Professional</h3>
+
+                    <div class="price">
+                      <strong>Contatta l'ufficio vendite</strong>
+                    </div>
+
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis nemo, consectetur sit veniam
+                      quia
+                      fugiat. Asperiores omnis, odio minus quia a, qui vero harum ea consectetur, soluta quis sequi
+                      illum?
+                    </p>
+                  </div>
+
+                  <div class="col-4">
+                    <div class="call_to_action">
+                      <a href="" class="btn btn-lg btn-primary mt-0">Contatta l'ufficio vendite</a>
+                    </div>
+
+                  </div>
+                </div>
+
+              </div>
+              <!-- /.card-body -->
             </div>
           </div>
         </div>
 
       </div>
     </section>
+    <!-- /#plans -->
+
+    <section id="partners">
+      <div class="container-sm">
+        <div class="row">
+          <div class="col-8">
+            <img src="./assets/img/partner.png" alt="">
+          </div>
+          <div class="col-4">
+            <h3>Entra in contatto con un partner Dropbox</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi animi sapiente possimus aliquam modi,
+              dignissimos illo veritatis in minus sit, ad necessitatibus laboriosam voluptatum. Veniam iure est ab
+              accusantium facilis!</p>
+
+            <a href="" class="btn btn-outline">Trova partner</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /#partners -->
+
+
+    <div id="operations">
+      <div class="container-sm">
+        <h2> Esegui piú operazioni con Dropbox Business</h2>
+
+        <div class="row">
+          <div class="col-4">
+            <div class="card">
+              <img src="./assets/img/business-feature-coordinate-it.png" alt="">
+              <h3>Passa di meno da uno stromento all'altro</h3>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos, reiciendis beatae assumenda minus, ipsam
+                quam quidem architecto molestias nisi, a consequuntur voluptatum deserunt dolores tempora. Asperiores
+                blanditiis similique exercitationem error!</p>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card">
+              <img src="./assets/img/business-feature-integrations-it.png" alt="">
+              <h3>Passa di meno da uno stromento all'altro</h3>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos, reiciendis beatae assumenda minus, ipsam
+                quam quidem architecto molestias nisi, a consequuntur voluptatum deserunt dolores tempora. Asperiores
+                blanditiis similique exercitationem error!</p>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card">
+              <img src="./assets/img/business-feature-multi-device.png" alt="">
+              <h3>Passa di meno da uno stromento all'altro</h3>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos, reiciendis beatae assumenda minus, ipsam
+                quam quidem architecto molestias nisi, a consequuntur voluptatum deserunt dolores tempora. Asperiores
+                blanditiis similique exercitationem error!</p>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card">
+              <img src="./assets/img/business-feature-security.png" alt="">
+              <h3>Passa di meno da uno stromento all'altro</h3>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos, reiciendis beatae assumenda minus, ipsam
+                quam quidem architecto molestias nisi, a consequuntur voluptatum deserunt dolores tempora. Asperiores
+                blanditiis similique exercitationem error!</p>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card">
+              <img src="./assets/img/business-feature-send-files-it.png" alt="">
+              <h3>Passa di meno da uno stromento all'altro</h3>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos, reiciendis beatae assumenda minus, ipsam
+                quam quidem architecto molestias nisi, a consequuntur voluptatum deserunt dolores tempora. Asperiores
+                blanditiis similique exercitationem error!</p>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card">
+              <img src="./assets/img/business-feature-switching-tools.png" alt="">
+              <h3>Passa di meno da uno stromento all'altro</h3>
+              <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eos, reiciendis beatae assumenda minus, ipsam
+                quam quidem architecto molestias nisi, a consequuntur voluptatum deserunt dolores tempora. Asperiores
+                blanditiis similique exercitationem error!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /#operations -->
+
+    <section id="teams">
+      <div class="container-sm">
+        <h2>
+          Piu di 500.000 team utilizzano <br> Dropbox Business
+        </h2>
+        <a href="">Scopri di piu sui nostri clienti</a>
+      </div>
+    </section>
+
+    <!-- /#teams -->
 
   </main>
-  <footer></footer>
+
+  <footer>
+
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h3>Dropbox</h3>
+          <ul>
+            <li><a href="">Lorem.</a></li>
+            <li><a href="">Blanditiis.</a></li>
+            <li><a href="">Obcaecati.</a></li>
+            <li><a href="">Deleniti.</a></li>
+            <li><a href="">Quidem!</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <h3>Prodotti</h3>
+          <ul>
+            <li><a href="">Lorem.</a></li>
+            <li><a href="">Blanditiis.</a></li>
+            <li><a href="">Obcaecati.</a></li>
+            <li><a href="">Deleniti.</a></li>
+            <li><a href="">Quidem!</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <h3>Azienda</h3>
+          <ul>
+            <li><a href="">Lorem.</a></li>
+            <li><a href="">Blanditiis.</a></li>
+            <li><a href="">Obcaecati.</a></li>
+            <li><a href="">Deleniti.</a></li>
+            <li><a href="">Quidem!</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <h3>Supporto</h3>
+          <ul>
+            <li><a href="">Lorem.</a></li>
+            <li><a href="">Blanditiis.</a></li>
+            <li><a href="">Obcaecati.</a></li>
+            <li><a href="">Deleniti.</a></li>
+            <li><a href="">Quidem!</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <h3>Community</h3>
+          <ul>
+            <li><a href="">Lorem.</a></li>
+            <li><a href="">Blanditiis.</a></li>
+            <li><a href="">Obcaecati.</a></li>
+            <li><a href="">Deleniti.</a></li>
+            <li><a href="">Quidem!</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <hr class="divider">
+
+      <div class="language">
+        <i class="fas fa-globe" aria-hidden="true"></i>
+        <span>Italian</span>
+        <i class="fa fa-angle-up" aria-hidden="true"></i>
+      </div>
+    </div>
+
+
+  </footer>
 </body>
 
 </html>

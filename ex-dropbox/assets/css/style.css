@@ -21,22 +21,38 @@
 
 body
 {
-  font-family: sans-serif;
+  font-family: 'Open Sans', sans-serif;
   min-width: 1440px;
+}
+
+img
+{
+  max-width: 100%;
+}
+
+h2
+{
+  font-size: 2.75rem;
+  padding: 3rem 0 2rem;
+}
+
+h3
+{
+  margin: 1.5rem 0;
 }
 
 /* Layout */
 .container
 {
   max-width: 1152px;
-  width: 80%;
+  width: 90%;
   margin: auto;
 }
 
 .container-sm
 {
-  max-width: 992px;
-  width: 70%;
+  max-width: 1000px;
+  width: 75%;
   margin: auto;
 }
 
@@ -56,13 +72,25 @@ body
 {
   width: auto;
   flex-basis: auto;
+  flex-grow: 1;
 
 }
-
 
 .col-4
 {
   width: calc(100% / 12 * 4);
+
+}
+
+.col-5
+{
+  width: calc(100% / 12 * 5);
+}
+
+
+.col-7
+{
+  width: calc(100% / 12 * 7);
 
 }
 
@@ -80,6 +108,7 @@ body
 
 /* end Layout */
 
+
 .btn
 {
   display: inline-block;
@@ -96,6 +125,18 @@ body
 {
   background-color: var(--box-primary);
   color: white;
+}
+
+.mt-0
+{
+  margin-top: 0 !important;
+}
+
+.divider
+{
+  width: 4rem;
+  margin: 3rem 0;
+  border-color: lightgray;
 }
 
 /* Header */
@@ -153,7 +194,7 @@ header
 .jumbotron
 {
   background-color: var(--box-secondary);
-  height: 700px;
+  height: 612px;
   margin-bottom: 6rem;
 
   a:not(.btn)
@@ -170,14 +211,14 @@ header
 
   p
   {
-    line-height: 1.75rem;
+    line-height: 1.5rem;
     font-size: 1.1rem;
-    margin-bottom: 2rem;
+    /*  margin-bottom: 2rem; */
   }
 
   .btn
   {
-    margin-bottom: 2rem;
+    /*  margin-bottom: 2rem; */
   }
 
   /* 
@@ -186,18 +227,156 @@ header
   */
   img
   {
-    width: 120%;
+    width: 100%;
+  }
+
+  .col-4
+  {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
   }
 }
 
 
 #plans
 {
-  h2
+  .card
   {
-    font-size: 2.75rem;
-    padding: 3rem 0 2rem;
+    height: 100%;
+    border: 1px solid rgb(171, 171, 171);
+
+    .card-header
+    {
+      border-bottom: 1px solid rgb(171, 171, 171);
+      text-align: center;
+      padding: 0.5rem 0;
+
+
+    }
+
+
+    .card-body
+    {
+      padding: 2rem;
+
+      h3
+      {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+      }
+
+      .price div
+      {
+        color: gray;
+        margin: 1rem 0 2rem;
+      }
+
+      ul.fa-ul
+      {
+        margin-left: 1.5rem;
+      }
+
+      .btn
+      {
+        margin: 2.5rem 0 1.25rem;
+        text-align: center;
+        display: block;
+        padding: 0.5rem;
+      }
+
+
+
+      div.key_points
+      {
+        h4
+        {
+          margin-bottom: 2rem;
+        }
+
+        ul
+        {
+          line-height: 2rem;
+        }
+      }
+
+
+
+    }
+  }
+
+}
+
+
+
+#partners
+{
+  padding: 8rem 0;
+
+  img
+  {
+    max-width: 95%;
+  }
+
+
+
+  .btn.btn-outline
+  {
+    margin-top: 2rem;
+    text-align: center;
+    border: 1px solid;
+
+    &:hover
+    {
+      background-color: var(--box-dark);
+      color: var(--box-secondary);
+    }
   }
 }
 
+
+#teams
+{
+  margin: 8rem 0;
+}
+
 /* endMain */
+
+footer
+{
+  background-color: var(--box-dark);
+  padding: 2rem 0;
+  color: gray;
+
+  h3
+  {
+    color: white;
+    margin-bottom: 1.25rem;
+  }
+
+  ul
+  {
+    list-style: none;
+    line-height: 2rem;
+
+    a
+    {
+      color: rgb(158, 158, 158);
+      text-decoration: none;
+
+      &:hover
+      {
+        text-decoration: underline;
+
+      }
+    }
+  }
+
+  hr.divider
+  {
+    border-color: gray;
+  }
+
+  .language
+  {}
+}
