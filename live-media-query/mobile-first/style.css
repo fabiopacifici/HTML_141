@@ -1,0 +1,58 @@
+/* 
+
+The rules outside the media query take effect on all devices starting from the smallest - MOBILE FIRST */
+
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container
+{
+  /*width: 800px;*/
+  width: 80%;
+  max-width: 400px;
+
+  margin: auto;
+  background-color: paleturquoise;
+}
+
+h1
+{
+  font-size: 1.5rem;
+}
+
+
+
+@media screen and (min-width: 768px)
+{
+
+  /* Your css code here */
+
+  .container
+  {
+    background-color: red;
+    max-width: 700px;
+  }
+
+
+}
+
+
+
+@media screen and (min-width: 1024px)
+{
+  .container
+  {
+    background-color: rgb(251, 0, 255);
+    max-width: 900px;
+  }
+
+  h1
+  {
+    font-size: 2rem;
+  }
+
+}
