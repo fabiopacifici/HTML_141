@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nerko+One&display=swap');
+
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root
+{
+  --gb-font-logo: 'Nerko One', cursive;
+  --gb-font-default: Montserrat, 'Helvetica Neue', sans-serif;
+  --gb-accent: #ff9614;
+  --gb-primary-dark: #4e3969;
+  --gb-primary: #7c69a4;
+  --gb-dark: #000103;
+  --gb-light: #f6f5f3;
+  --gb-white: white;
+  --gb-gray: rgba(128, 128, 128, 0.732);
+
+}
+
+body
+{
+  background-color: var(--gb-light);
+  font-family: "Montserrat", serif;
+  font-size: 14px;
+  line-height: 1.75rem;
+}
+
+img
+{
+  max-width: 100%;
+}
+
+.video
+{
+  flex-grow: 1;
+}
+
+main
+{
+  padding: 1rem;
+}
+
+#site_header
+{
+  background-color: var(--gb-white);
+  padding: 0.5rem;
+
+  .logo
+  {
+    font-family: var(--gb-font-logo);
+    text-align: center;
+    color: var(--gb-accent);
+    text-shadow: 1px 1px 2px gray;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    font-weight: 400;
+  }
+
+
+
+}
+
+/* #region Recipe */
+.recipe header
+{
+  h4
+  {
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--gb-gray);
+  }
+
+  h2
+  {
+    color: var(--gb-primary-dark);
+    margin-bottom: 1.5rem;
+    font-weight: 800;
+  }
+
+  span
+  {
+    display: none;
+  }
+}
+
+.recipe-card
+{
+
+  background-color: var(--gb-white);
+  box-shadow: 0 0 10px rgb(184, 184, 184);
+
+  .video
+  {
+    img
+    {
+      display: block;
+      width: 100%;
+    }
+  }
+
+  .overview
+  {
+    padding: 1rem;
+
+    h4
+    {
+      margin-bottom: 1rem;
+    }
+
+    ul
+    {
+      list-style: none;
+    }
+  }
+
+}
+
+.recipe .social
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1.5rem 0;
+
+  .icon
+  {
+    background-color: var(--gb-white);
+    width: 30px;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0 0 5px var(--gb-gray);
+
+    .fa-facebook
+    {
+      color: blue;
+    }
+
+    .fa-twitter
+    {
+      color: #009eff;
+    }
+
+    .fa-instagram
+    {
+      color: #e4729c;
+    }
+
+    .fa-pinterest,
+    .fa-youtube
+    {
+      color: red;
+    }
+  }
+
+  .icon_text
+  {
+    display: none;
+  }
+}
+
+.advertisement
+{
+  display: none;
+}
+
+
+.presentation
+{
+  h3
+  {
+    font-weight: 600;
+    text-transform: uppercase;
+
+    &::after
+    {
+      display: block;
+      content: '';
+      width: 60px;
+      height: 2px;
+      background-color: var(--gb-accent);
+      margin-bottom: 1rem;
+    }
+
+  }
+
+
+  img
+  {
+    padding: 0 2.5rem;
+    text-align: center;
+  }
+
+}
+
+/* #endregion Recipe */
+
+footer
+{
+  background-color: var(--gb-primary);
+  text-align: center;
+  color: var(--gb-white);
+  padding: 1rem;
+
+  a
+  {
+    color: var(--gb-white);
+    padding: 1rem;
+  }
+}
+
+
+
+/* Responsive Solution */
+
+@media screen and (min-width: 768px)
+{
+
+  /* Il logo nell'header si allinea a sinistra */
+  #site_header .logo
+  {
+    text-align: left;
+  }
+
+  /* Il padding del contenuto principale della pagina aumenta */
+  main
+  {
+    padding: 3.5rem;
+  }
+
+  /* Compare il testo "(Dolce Tradizionale)" */
+  .recipe header span
+  {
+    display: inline;
+  }
+
+  /* La grandezza del titolo diventa più grande */
+  .recipe header h2
+  {
+    font-size: 39px;
+  }
+
+  /* Le informazioni della ricetta sotto il video si dispongono a griglia */
+  .recipe-card .overview ul
+  {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 3.2rem;
+  }
+
+  /* I bottoni social si allargano */
+  .recipe .social
+  {
+    column-gap: 1rem;
+
+    .icon
+    {
+      width: calc(100% / 5);
+    }
+  }
+
+  /* compare il banner pubblicitario */
+  .advertisement
+  {
+    display: block;
+  }
+
+
+
+  /* l'immagine nella descrizione della ricetta viene circondata dal testo */
+
+  .presentation img
+  {
+    float: left;
+    padding: 0;
+    max-width: 300px;
+    margin-right: 1.5rem;
+  }
+
+
+}
+
+
+
+@media screen and (min-width: 992px)
+{
+
+  /* La grandezza del titolo della ricetta aumenta ancora di più */
+  .recipe header h2
+  {
+    font-size: 50px;
+  }
+
+  /* Le informazioni della ricetta tornano a disporsi una sotto l'altra */
+  .recipe-card .overview ul
+  {
+    display: block;
+
+  }
+
+  /* Il video e le altre informazioni della ricetta si dispongono uno accanto all'altro */
+  .recipe-card
+  {
+    display: flex;
+
+    .overview
+    {
+      width: 30%;
+    }
+
+  }
+
+  /* Compaiono i nomi delle piattaforme social */
+  .recipe .social .icon_text
+  {
+    display: inline;
+  }
+
+  /* NEl footer i dati del sito e il menu di navigazione di dispongono sulla stessa linea ma su lati opposti */
+
+  footer
+  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .company
+    {
+      text-align: left;
+    }
+
+  }
+
+
+  main
+  {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+}

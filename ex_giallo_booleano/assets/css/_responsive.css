@@ -1,0 +1,151 @@
+/* Responsive  */
+@media screen and (min-width: 768px)
+{
+
+  /* Il logo nell'header si allinea a sinistra */
+  #site_header .logo
+  {
+    text-align: left;
+  }
+
+  /* - Il padding del contenuto principale della pagina aumenta  */
+
+  main
+  {
+    padding: 3rem;
+  }
+
+
+  /* - Compare il testo "(Dolce Tradizionale)" */
+  .recipe header span
+  {
+    display: inline;
+  }
+
+  /* - La grandezza del titolo diventa più grande */
+
+  .recipe header h2
+  {
+    font-size: 2rem;
+  }
+
+  /*   Le informazioni della ricetta sotto il video si dispongono a griglia */
+
+  .recipe ul
+  {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 2.75rem;
+  }
+
+  /* I bottoni social si allargano */
+
+  .social .icon
+  {
+    display: flex;
+    justify-content: center;
+    padding: 0.5rem 3.5rem;
+    text-align: center;
+  }
+
+  /* - compare il banner pubblicitario */
+  .advertisement
+  {
+    display: block;
+    margin-bottom: 1.5rem;
+  }
+
+  /*    
+  - l'immagine nella descrizione della ricetta viene circondata dal testo  
+  */
+
+  .presentation img
+  {
+    float: left;
+    max-width: 300px;
+    padding: 0;
+    margin-right: 1rem;
+    box-shadow: 0 0 10px var(--gb-gray);
+
+  }
+
+
+}
+
+
+@media screen and (min-width: 992px)
+{
+
+  #site_header
+  {
+    padding: 1rem 2rem;
+
+    .logo
+    {
+      font-size: 60px;
+    }
+  }
+
+  main
+  {
+    max-width: 1346px;
+    margin: auto;
+  }
+
+  .recipe-card .overview
+  {
+    padding: 2rem;
+    width: 30%;
+    font-size: 16px;
+    line-height: 2rem;
+  }
+
+
+  /* La grandezza el titolo della ricetta aumenta ancora di più */
+
+  .recipe header h2
+  {
+    font-size: 2.5rem;
+  }
+
+  /* Le informazioni della ricetta tornano a disporsi una sotto l'altra */
+  .recipe ul
+  {
+    display: block;
+  }
+
+  /* Il video e le altre informazioni della ricetta si dispongono uno accanto all'altro */
+
+  .recipe-card
+  {
+    display: flex;
+  }
+
+  /* Compaiono i nomi delle piattaforme social */
+  .recipe .social
+  {
+    .icon
+    {
+      display: flex;
+      align-items: center;
+      column-gap: 0.25rem;
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+
+    .icon_text
+    {
+      display: inline;
+    }
+  }
+
+
+  footer
+  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+  }
+
+}
