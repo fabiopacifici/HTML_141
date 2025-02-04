@@ -1,0 +1,167 @@
+.top
+{
+  display: flex;
+  height: calc(100vh - 80px);
+  background-color: #000418;
+
+  .sidebar
+  {
+    width: 50px;
+    background-color: black;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+
+    .sidebar_top
+    {
+      min-height: 300px;
+
+    }
+
+    .sidebar_bottom
+    {
+      min-height: 50px;
+      /*   background-color: gray; */
+    }
+
+
+    @media screen and (min-width: 600px)
+    {
+      width: 220px;
+
+    }
+
+  }
+
+  main
+  {
+    width: calc(100% - 50px);
+    /* background-color: #e1049f; */
+    overflow-y: auto;
+
+    height: 100%;
+
+    .upgrade
+    {
+      background-color: #000000df;
+      position: sticky;
+      top: 0;
+      right: 0;
+      width: 100%;
+      text-align: end;
+      padding: 1rem;
+      z-index: 1;
+    }
+
+    section
+    {
+      padding: 1rem;
+    }
+
+    .albums
+    {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+
+      .album
+      {
+        min-height: 250px;
+        width: calc(100% / 2 - 1rem);
+        /* background-color: red; */
+      }
+    }
+
+
+    @media screen and (min-width: 600px)
+    {
+      width: calc(100% - 220px);
+
+    }
+
+
+    @media screen and (min-width: 768px)
+    {
+
+      .albums .album
+      {
+        width: calc(100% / 4 - 1rem);
+
+      }
+
+    }
+
+    @media screen and (min-width: 992px)
+    {
+
+      .albums .album
+      {
+        width: calc(100% / 6 - 1rem);
+
+      }
+
+    }
+
+  }
+
+}
+
+.bottom
+{
+  height: 80px;
+  background-color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+
+  .center
+  {
+    flex-grow: 1;
+    text-align: center;
+  }
+
+  @media screen and (min-width: 768px)
+  {
+
+    .left,
+    .right
+    {
+      width: 220px;
+    }
+
+    .right
+    {
+      text-align: right;
+    }
+
+  }
+
+}
+
+
+
+/* Custom main scrollbar */
+
+::-webkit-scrollbar
+{
+  width: 10px;
+}
+
+::-webkit-scrollbar-track
+{
+  background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb
+{
+  background-color: #888;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover
+{
+  background-color: #555;
+}

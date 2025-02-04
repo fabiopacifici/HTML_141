@@ -1,0 +1,116 @@
+.player
+{
+  padding: 0 1rem;
+
+  .left
+  {
+    display: flex;
+    gap: 1.5rem;
+    justify-content: space-between;
+    color: gray;
+
+
+    .brand
+    {
+      gap: 0.5rem;
+      display: flex;
+
+      h3
+      {
+        font-size: 1.1rem;
+        font-weight: 700;
+        color: #fff;
+      }
+
+      p
+      {
+        font-weight: 700;
+      }
+
+
+    }
+
+    .actions
+    {
+      display: flex;
+      gap: 0.5rem;
+
+      @media screen and (max-width: 768px)
+      {
+        flex-direction: column;
+
+
+      }
+
+
+    }
+
+
+  }
+
+  .center
+  {
+    color: white;
+    padding: 0 1.5rem;
+    max-width: 600px;
+    margin: auto;
+
+    .player_controls
+    {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 5%;
+      margin-bottom: 0.5rem;
+
+    }
+
+
+  }
+
+  .right
+  {
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+
+  @media screen and (max-width: 480px)
+  {
+
+    .brand
+    {
+      gap: 0.25rem;
+    }
+
+
+    .brand img
+    {
+      width: 50px;
+      aspect-ratio: 1;
+    }
+
+    .brand h3,
+    .brand p
+    {
+      display: none;
+    }
+
+    .left,
+    .right
+    {
+      display: none;
+    }
+
+    .right .slider_controls
+    {
+      display: none;
+    }
+
+  }
+
+
+
+}

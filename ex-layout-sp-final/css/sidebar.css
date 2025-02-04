@@ -1,0 +1,195 @@
+.sidebar
+{
+  .logo
+  {
+
+    padding: 0.5rem;
+    text-align: center;
+
+    .logo_desktop
+    {
+      display: none;
+    }
+
+    .logo_mobile
+    {
+      display: inline-block;
+
+    }
+
+    @media screen and (min-width: 600px)
+    {
+      padding: 1rem;
+
+      .logo_desktop
+      {
+        display: block;
+      }
+
+      .logo_mobile
+      {
+        display: none;
+      }
+
+    }
+  }
+
+
+  .main_menu
+  {
+    padding: 0.5rem;
+
+    ul
+    {
+      list-style: none;
+      line-height: 2rem;
+
+
+      a
+      {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        gap: 0.5rem;
+
+        span
+        {
+          display: none;
+        }
+      }
+    }
+
+    @media screen and (min-width: 600px)
+    {
+      padding: 1rem;
+
+      ul a
+      {
+        justify-content: flex-start;
+      }
+
+      ul a span
+      {
+        display: inline;
+      }
+
+    }
+
+  }
+
+
+  .playlist
+  {
+    display: none;
+    padding: 1rem;
+    color: gray;
+    overflow-y: auto;
+
+    @media screen and (min-width: 600px)
+    {
+      display: block;
+
+      h3
+      {
+        text-transform: uppercase;
+        color: white;
+        margin-bottom: 1rem;
+      }
+
+      .add
+      {
+        color: gray;
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+        margin-bottom: 1rem;
+      }
+
+      ul.playlist_items
+      {
+        list-style: none;
+        line-height: 2rem;
+        overflow-y: auto;
+        /* Enable vertical scrolling */
+        /* Adjust the height to fit within the sidebar */
+        max-height: calc(100vh - 70px - 350px);
+
+      }
+
+    }
+  }
+
+  .sidebar_bottom
+  {
+    padding: 0.5rem;
+    text-align: center;
+
+    .install
+    {
+      padding-bottom: 0.25rem;
+      color: gray;
+
+      span
+      {
+        display: none;
+      }
+    }
+
+    .profile
+    {
+      img
+      {
+        aspect-ratio: 1;
+      }
+
+      strong
+      {
+        display: none;
+        color: white;
+      }
+    }
+
+    @media screen and (min-width: 600px)
+    {
+      text-align: left;
+      padding: 0.5rem 1rem;
+
+      .install
+      {
+        border-bottom: 1px solid gray;
+
+
+        img
+        {
+          vertical-align: middle;
+        }
+
+        span
+        {
+          display: inline;
+        }
+      }
+
+
+      .profile
+      {
+        margin-top: .25rem;
+
+        strong
+        {
+          display: inline;
+        }
+
+        img
+        {
+          background-color: gray;
+          border-radius: 50%;
+          vertical-align: middle;
+        }
+      }
+
+
+    }
+  }
+}

@@ -1,0 +1,27 @@
+@import url('./css/common.css');
+@import url('./css/layout.css');
+@import url('./css/sidebar.css');
+@import url('./css/main.css');
+@import url('./css/player.css');
+
+
+@media screen and (max-width: 375px)
+{
+
+  .top
+  {
+    & main
+    {
+      & .albums
+      {
+        .album
+        {
+
+          width: 100%;
+          /* background-color: red; */
+        }
+      }
+    }
+  }
+
+}
